@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrangeBlog - Modern Tech Insights</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="site-header fixed-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                OrangeBlog
+            </a>
+
+            <div class="header-right">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#">Posts</a></li>
+                        <li><a href="#">Tags</a></li>
+                        <li><a href="#">Tools</a></li>
+                    </ul>
+                </nav>
+                <div class="header-icons">
+                    <a href="https://www.linkedin.com/in/gulab/" class="icon-link" aria-label="LinkedIn"
+                        target="_blank">
+                        <!-- LinkedIn Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/CodeAIGit" class="icon-link" aria-label="GitHub" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                    <div class="separator">|</div>
+                    <a href="#" class="icon-link" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container main-layout">
+        <main class="content-area">
+            <section class="latest-articles">
+                <!-- Removed <h1>Latest Articles</h1> to align columns -->
+
+                <!-- Article 1 -->
+                <article class="post-card">
+                    <div class="post-meta">
+                        <span class="date">October 24, 2024</span>
+                        <span class="author">Alex Chen</span>
+                    </div>
+                    <h2>Configuring Windows Spotlight</h2>
+                    <p>This week is all about configuring Windows Spotlight. Windows Spotlight is definitely not
+                        something new, but it's essential for a modern desktop experience.</p>
+                    <a href="#" class="read-more">Read more &rarr;</a>
+                    <div class="tags">
+                        <span class="tag">Windows</span>
+                        <span class="tag">Config</span>
+                    </div>
+                </article>
+
+                <!-- Article 2: The Code Editor Article -->
+                <article class="post-card featured-post">
+                    <!-- Moved Code Editor to be the "featured image" area above the title -->
+                    <div class="post-image">
+                        <div class="code-editor-demo">
+                            <div class="editor-header">
+                                <span class="filename">script.js</span>
+                                <span class="lang">JS</span>
+                            </div>
+                            <div class="editor-body">
+                                <pre><code class="language-javascript" contenteditable="true" spellcheck="false" style="outline: none;">function initGrid() {
+  const container = document.querySelector('.grid');
+  const items = fetchItems();
+  
+  items.forEach(item => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.textContent = item.title;
+    container.appendChild(card);
+  });
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="date">October 26, 2024</span>
+                            <span class="author">Sarah Johnson</span>
+                        </div>
+                        <h2>Mastering CSS Grid Layout</h2>
+                        <p>CSS Grid has revolutionized how we build web layouts. In this deep dive, we explore advanced
+                            techniques for creating complex, responsive grid systems that adapt beautifully to any
+                            screen size.</p>
+
+                        <a href="#" class="read-more">Read more &rarr;</a>
+                        <div class="tags">
+                            <span class="tag">CSS</span>
+                            <span class="tag">Frontend</span>
+                            <span class="tag">Design</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="post-card">
+                    <div class="post-meta">
+                        <span class="date">October 28, 2024</span>
+                        <span class="author">David Smith</span>
+                    </div>
+                    <h2>The Art of Minimalist Web Design</h2>
+                    <p>Minimalism isn't just about using less; it's about making space for what matters. Learn how to
+                        apply effective minimalist design principles.</p>
+                    <a href="#" class="read-more">Read more &rarr;</a>
+                </article>
+
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="widget about-me">
+                <div class="avatar">OB</div>
+                <h3>Orange Blogger</h3>
+                <p>Passionate about technology, design, and code. Sharing insights and tutorials.</p>
+            </div>
+
+            <div class="widget subscribe">
+                <h3>Subscribe</h3>
+                <p>Get the latest updates right to your inbox.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Your email address">
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
+
+            <div class="widget popular-tags">
+                <h3>Popular Tags</h3>
+                <div class="tag-cloud">
+                    <span class="tag">Technology</span>
+                    <span class="tag">Design</span>
+                    <span class="tag">Development</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">React</span>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2>OrangeBlog</h2>
+                <p>A modern tech blog template.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-legal">
+                <p>&copy; 2024 OrangeBlog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
